@@ -144,7 +144,7 @@ export interface ApiResponse<T> {
     data: T;
 }
 
-// ➕ EKLE: Profile Response Type (get-profile endpoint'ten dönen)
+// Profile Response Type
 export interface ProfileResponse {
     profile: User & {
         globalRank: number;
