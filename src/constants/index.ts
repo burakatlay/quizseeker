@@ -1,21 +1,18 @@
 import { PublicKey } from '@solana/web3.js'
 
 // ==================== SUPABASE CONFIG ====================
-export const SUPABASE_URL = 'https://hrqevfcoaidutgxthbdu.supabase.co'
-export const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhycWV2ZmNvYWlkdXRneHRoYmR1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njk0Mjg0NjMsImV4cCI6MjA4NTAwNDQ2M30.wjHTo5Z65Pr18aAW5TtdY_tl3ekpqD1maxiANyOy04M'
+export const SUPABASE_URL = '..'
+export const SUPABASE_ANON_KEY = '..'
 
 // ==================== SOLANA CONFIG ====================
-const HELIUS_API_KEY = 'c8cfc659-8e77-4dad-aec6-4f5993c4ace3'
+const HELIUS_API_KEY = '..'
 
-// ✅ FIXED: Always use Helius, with fallback in solana.ts
-export const SOLANA_RPC_URL = `https://mainnet.helius-rpc.com/?api-key=${HELIUS_API_KEY}`
+export const SOLANA_RPC_URL = `..`
 
 export const SOLANA_CLUSTER = 'mainnet-beta'
 
-// ✅ Receiver wallet (platform wallet)
-export const PLATFORM_WALLET = new PublicKey('JBv9tBjzZidd4LcNpNgJ5NSYqJu22wHy22pxbvsDpSbG')
+export const PLATFORM_WALLET = new PublicKey('..')
 
-// App Identity for Mobile Wallet Adapter
 export const APP_IDENTITY = {
     name: 'QuizSeeker',
     uri: 'https://quizseeker.app',
