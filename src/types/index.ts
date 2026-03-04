@@ -18,7 +18,7 @@ export interface User {
     last_login_at: string | null;
 }
 
-// ➕ EKLE: Package Type
+// Package Type
 export interface GamePackage {
     id: number
     code: string
@@ -71,7 +71,7 @@ export interface GameSession {
     competitionId: number
     entryId: number
     playType: 'free' | 'package'
-    categoryId: string  // ✅ YENİ
+    categoryId: string
     questions: Question[]
     currentQuestionIndex: number
     answers: AnswerRecord[]
@@ -149,7 +149,7 @@ export interface ProfileResponse {
     profile: User & {
         globalRank: number;
     };
-    packages?: GamePackage[]; // ➕ Paketler
+    packages?: GamePackage[];
     equipped?: any[];
     recentGames?: any[];
     achievements?: any[];
