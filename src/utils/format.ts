@@ -33,8 +33,8 @@ export function getLevelInfo(totalXP: number) {
         maxXP: levelThreshold.maxXP,
         currentXP: currentXPInLevel,
         nextLevelXP: xpNeededForNextLevel,
-        progressPercentage: Math.min(progressPercentage, 100), // ✅ İşte bu!
-        progress: Math.min(progressPercentage, 100), // Backward compatibility
+        progressPercentage: Math.min(progressPercentage, 100),
+        progress: Math.min(progressPercentage, 100),
     }
 }
 
