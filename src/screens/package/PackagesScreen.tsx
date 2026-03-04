@@ -110,8 +110,6 @@ export function PackagesScreen() {
      * Amaç: Uygulama her açılışında constant'tan okumak yerine
      * cache'den oku (hız + network tasarrufu)
      * 
-     * Cüzdan: JBv9tBjzZidd4LcNpNgJ5NSYqJu22wHy22pxbvsDpSbG
-     * (Platform'un treasury wallet'ı)
      */
     const cacheReceiverWallet = async () => {
         try {
@@ -120,7 +118,7 @@ export function PackagesScreen() {
             if (cached) return
 
             // Cache'de yok → Cüzdan adresini kaydet
-            const receiverWallet = 'JBv9tBjzZidd4LcNpNgJ5NSYqJu22wHy22pxbvsDpSbG'
+            const receiverWallet = '...'
             await AsyncStorage.setItem(STORAGE_KEYS.RECEIVER_WALLET, receiverWallet)
             console.log('✅ Receiver wallet cached')
         } catch (error) {
@@ -140,7 +138,7 @@ export function PackagesScreen() {
             if (cached) return cached
 
             // Fallback: Constant'tan al
-            const fallbackWallet = 'JBv9tBjzZidd4LcNpNgJ5NSYqJu22wHy22pxbvsDpSbG'
+            const fallbackWallet = '...'
             await AsyncStorage.setItem(STORAGE_KEYS.RECEIVER_WALLET, fallbackWallet)
             return fallbackWallet
 
